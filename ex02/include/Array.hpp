@@ -6,7 +6,7 @@
 /*   By: daniel-escamilla <daniel-escamilla@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:59:25 by daniel-esca       #+#    #+#             */
-/*   Updated: 2025/06/14 18:25:43 by daniel-esca      ###   ########.fr       */
+/*   Updated: 2025/06/14 19:02:57 by daniel-esca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ class Array
 		unsigned int size() const throw();
 };
 
-#include "../src/Array.tpp"
+#include "Array.tpp"
 
 #endif
