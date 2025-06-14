@@ -6,7 +6,7 @@
 /*   By: daniel-escamilla <daniel-escamilla@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:59:25 by daniel-esca       #+#    #+#             */
-/*   Updated: 2025/06/12 18:30:35 by daniel-esca      ###   ########.fr       */
+/*   Updated: 2025/06/14 18:25:43 by daniel-esca      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,29 @@
 # define Array_HPP
 
 #include <cstddef>
+#include <cstdlib>
+#include <stdexcept>
+#include <iostream>
 
 template<typename T>
 class Array
 {
 	private:
-		T*		data;
-		size_t	size;
+		T*				_data;
+		unsigned int	_size;
 	public:
-		Array() {};
-		~Array() {};
+		Array();
+		~Array();
 		Array(unsigned int n);
 		Array(const Array& copy);
 		Array& operator=(const Array& copy);
 
-		T& operator[](size_t index);
-		T& const operator[](size_t index) const;
+		T& operator[](unsigned int index);
+		const T& operator[](unsigned int index) const;
 	
-		size_t size() const throw();
+		unsigned int size() const throw();
 };
+
+#include "../src/Array.tpp"
 
 #endif
