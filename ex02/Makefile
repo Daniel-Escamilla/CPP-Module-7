@@ -2,8 +2,7 @@ NAME = Array
 CC = g++
 CFLAGS = -g3 -Wall -Wextra -Werror -std=c++98
 
-SRC =     src/main.cpp \
-
+SRC =	src/main.cpp
 
 OBJS = $(notdir $(SRC:.cpp=.o))
 OBJDIR = Array_objects
